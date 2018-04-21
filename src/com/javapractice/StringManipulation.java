@@ -34,7 +34,7 @@ public class StringManipulation
 		
 		//split
 		String test = "Hello_World_Test_Selenium";
-		String testVal[] = test.split("_");
+		String testVal[] = test.split("_"); //Split
 		for(int i=0; i<testVal.length; i++)
 		{
 			System.out.println(testVal[i]);
