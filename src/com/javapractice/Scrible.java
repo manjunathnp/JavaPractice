@@ -9,30 +9,24 @@ public class Scrible
 	{
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter the number: ");
-		final int n = sc.nextInt();
+		int num = sc.nextInt();
 		
-		if(isPrime(n))
-			System.out.println(n+" is Prime Number");
+		int temp, total=0;
+		
+		int number = num;
+		
+		while (number != 0)
+		{
+			temp = number % 10;
+			total = total +(temp*temp*temp);
+			number = number / 10;
+		}
+		
+		if(total == num)
+			System.out.println(num+ " is ARMSTRONG NUMBER");
 		else
-			System.out.println(n+" is not a Prime Number");
-			
+			System.out.println(num+ " is NOT ARMSTRONG NUMBER");
+		
 	}
 	
-	public static boolean isPrime(int n)
-	{
-		if(n <= 1)
-		{
-			return false;
-		}
-		for (int i=2; i<=n/2; i++)
-		{
-			if(n%i == 0)
-			{
-				return false;
-			}
-			
-		}
-		return true;
-	}
-
 }
