@@ -7,26 +7,39 @@ public class Scrible
 
 	public static void main(String[] args) 
 	{
-		Scanner sc = new Scanner(System.in);
-		System.out.print("Enter the number: ");
-		int num = sc.nextInt();
+		String str = "REVERSE";
+		String rev = "";
 		
-		int temp, total=0;
-		
-		int number = num;
-		
-		while (number != 0)
+		/*for(int i=str.length()-1; i>=0; i--)
 		{
-			temp = number % 10;
-			total = total +(temp*temp*temp);
-			number = number / 10;
+			rev = rev + str.charAt(i);
 		}
+		System.out.println(rev);*/
 		
-		if(total == num)
-			System.out.println(num+ " is ARMSTRONG NUMBER");
-		else
-			System.out.println(num+ " is NOT ARMSTRONG NUMBER");
+		StringBuffer sb = new StringBuffer(str);
+		System.out.println(sb.reverse());
+		
 		
 	}
-	
 }
+
+//import java.util.Scanner;
+/*public class Scrible {
+
+    public static void main(String[] args)
+    {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Input six non-negative digits: ");
+        int input = in.nextInt();
+        int n1 = input / 100000 % 10;
+        int n2 = input / 10000 % 10;
+        int n3 = input / 1000 % 10;
+        int n4 = input / 100 % 10;
+        int n5 = input / 10 % 10;
+        int n6 = input % 10;
+      //System.out.println(n1 + " " + n2 + " " + n3 + " " + n4 + " " + n5 + " " + n6);
+        
+        //int n1 = input / 100000 % 10;
+        System.out.println((123456/10) % 10);
+
+    }*/

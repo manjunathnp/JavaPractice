@@ -1,22 +1,25 @@
 package com.javapractice;
 
+import java.util.Scanner;
+
 public class PlayAround 
 {
 
 	public static void main(String[] args) 
 	{
-		String s1[] = {"Hello", "duplicate", "duplicate", "test"};
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter value of NUM1:");
+		double num1 = sc.nextInt();
+		System.out.println("Enter value of NUM2:");
+		double num2 = sc.nextInt();
+		System.out.println("Enter value of NUM3:");
+		double num3 = sc.nextInt();
 		
-		for(int i=0; i<s1.length; i++)
-		{
-			for(int j=i+1; j<s1.length; j++)
-			{
-				if(s1[i].equals(s1[j]))
-				{
-					System.out.println("Duplicate: "+s1[i]);
-				}
-			}
-		}
+		double average = (num1+num2+num3)/3;
+		
+		System.out.println("Average of "+num1+","+num2+","+num3+" = "+average);
+		
 	}
+	
 
 }
