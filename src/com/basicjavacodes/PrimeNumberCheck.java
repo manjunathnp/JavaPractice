@@ -41,6 +41,6 @@ public class PrimeNumberCheck
 	           }
 	       }
 	       return true;
-}
+	   }
 
 }
