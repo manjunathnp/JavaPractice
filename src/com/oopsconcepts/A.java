@@ -14,6 +14,7 @@ public class A
 		System.out.println(s1.equals(s2));
 		System.out.println(s1 == s2);
 		
+		StringBuffer s3 = new StringBuffer("Hello Java");
 		StringBuilder sb = new StringBuilder(s1);
 		System.out.println(sb.reverse());
 
