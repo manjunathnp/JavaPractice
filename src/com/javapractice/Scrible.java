@@ -1,19 +1,45 @@
 package com.javapractice;
 
+import java.util.Scanner;
+
 public class Scrible 
 {
 
 	public static void main(String[] args) 
 	{
-		int num = 123;
-		int rev = 0;
-				
-		while(num != 0)
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter the number: ");
+		int num = sc.nextInt();
+		
+		if (isPrime(num))
 		{
-			rev = rev*10 + num%10;
-			num = num/10;
+			System.out.println("PRIME NUMBER");
 		}
-		System.out.println(rev);
+		else
+		{
+			System.out.println("NOT PRIME NUMBER");
+		}
+		
+		
+	}
+	
+	public static boolean isPrime(int n)
+	{
+		if(n <= 1)
+		{
+			return false;
+		}
+		
+		for(int i=2; i<=n/2; i++)
+		{
+			if(n%i == 0)
+			{
+				return false;
+			}
+			
+		}
+		return true;
 	}
 	
 }
