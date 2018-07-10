@@ -24,10 +24,10 @@ public class CallByValCallByRef
 		
 	}
 	
-	public int sum(int a, int b)
+	public void sum(int a, int b)
 	{
 		int c = a + b;
-		return c;
+		System.out.println(c);
 	}
 	
 	public void swap(CallByValCallByRef t)
