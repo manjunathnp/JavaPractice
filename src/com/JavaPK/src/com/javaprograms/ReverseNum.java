@@ -11,13 +11,13 @@ public class ReverseNum {
 		int num = sc.nextInt();
 		
 		// Logic1 - Algorithm
-		/*int rev=0;
+		int rev=0;
 		
 		while(num!=0)
 		{
 			rev = rev*10 + num%10;
 			num = num/10;
-		}*/
+		}
 		
 		//Logic2 - using StringBuffer Class
 		/*StringBuffer sb = new StringBuffer(String.valueOf(num));
@@ -25,9 +25,9 @@ public class ReverseNum {
 		
 		
 		//Logic3 - using StringBuilder Class
-		StringBuilder sbl = new StringBuilder();
+		/*StringBuilder sbl = new StringBuilder();
 		sbl.append(num);
-		StringBuilder rev = sbl.reverse();
+		StringBuilder rev = sbl.reverse();*/
 		System.out.println("Reverse Number is: "+rev);
 		
 		
