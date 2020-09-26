@@ -10,7 +10,7 @@ public class ReverseNum {
 		System.out.println("Enter the number: ");
 		int num = sc.nextInt();
 		
-		// Logic1 - Algorithm
+		//Logic_1 - Algorithm
 		int rev=0;
 		
 		while(num!=0)
@@ -19,16 +19,19 @@ public class ReverseNum {
 			num = num/10;
 		}
 		
-		//Logic2 - using StringBuffer Class
-		/*StringBuffer sb = new StringBuffer(String.valueOf(num));
-		StringBuffer rev = sb.reverse();*/
+		//Logic_2 - using StringBuffer Class
+		StringBuffer sb = new StringBuffer(String.valueOf(num));
+		StringBuffer rev_ = sb.reverse();
 		
 		
-		//Logic3 - using StringBuilder Class
-		/*StringBuilder sbl = new StringBuilder();
+		//Logic_3 - using StringBuilder Class
+		StringBuilder sbl = new StringBuilder();
 		sbl.append(num);
-		StringBuilder rev = sbl.reverse();*/
-		System.out.println("Reverse Number is: "+rev);
+		StringBuilder rev__ = sbl.reverse();
+		
+		
+		System.out.println("Reverse Number is: "+rev__);
+		System.out.println("Reverse Number is: "+rev_);
 		
 		
 

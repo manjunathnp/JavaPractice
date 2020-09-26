@@ -9,28 +9,28 @@ public class Swap1 {
 		
 		System.out.println("Before swapping: a="+a+" "+"b="+b);
 		
-		//Logic1 - using Temp(third) variable
-		/*int temp = a;
+		//Logic_1 - using Temporary (third) variable
+		  int temp = a;
 		  a = b;
-		  b = temp;*/
+		  b = temp;
 		
-		//Logic2 - using + & -
-		/* a = a+b;
+		//Logic_2 - using + & -
+		   a = a+b;
 		   b = a-b;
-		   a = a-b;*/
+		   a = a-b;
 		
-		//Logic3 - using * & /
-		/* a = a*b;
+		//Logic_3 - using * & /
+		   a = a*b;
 		   b = a/b;
-		   a = a/b;*/
+		   a = a/b;
 		
-		//Logic4 - using XOR
-		/*a = a^b;
+		//Logic_4 - using XOR
+		  a = a^b;
 		  b = a^b;
-		  a = a^b;*/
+		  a = a^b;
 		
-		//Logic5 - using single statement
-		b = a+b - (a=b);
+		//Logic_5 - using single statement
+		  b = a+b - (a=b);
 		
 		System.out.println("After swapping: a="+a+" "+"b="+b);
 		

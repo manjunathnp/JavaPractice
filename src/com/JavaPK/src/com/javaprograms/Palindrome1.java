@@ -9,6 +9,7 @@ public class Palindrome1 {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the String: ");
 		String str = sc.next();
+		
 		String rev = "";
 		
 		int len = str.length();

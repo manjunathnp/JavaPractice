@@ -15,24 +15,26 @@ public class ReverseString {
 		
 		System.out.println("Original String: "+str);
 		
-		//Logic1 - Using charAt()
-		/*int len = str.length();
-		
-		for(int i=len-1; i>=0; i--)
-		{
-			rev = rev + str.charAt(i);
-		}*/
-		
-		//Logic2 - Using toCharArray()
-		/*char a[] = str.toCharArray();
+		//Logic_1 - Using charAt()
 		int len = str.length();
 		
 		for(int i=len-1; i>=0; i--)
 		{
-			rev = rev + a[i];
-		}*/
+			rev = rev + str.charAt(i);
+		}
 		
-		//Using StringBuffer class
+		
+		//Logic_2 - Using toCharArray()
+		char a[] = str.toCharArray();
+		int len_ = str.length();
+		
+		for(int i=len_-1; i>=0; i--)
+		{
+			rev = rev + a[i];
+		}
+		
+		
+		//Logic_3 - Using StringBuffer class
 		StringBuffer sb = new StringBuffer(str);
 		System.out.println("Reversed String: "+sb.reverse());
 		
