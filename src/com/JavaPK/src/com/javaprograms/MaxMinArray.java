@@ -4,6 +4,7 @@ public class MaxMinArray {
 
 	public static void main(String[] args) 
 	{
+		
 		int a[] = {20, 190, 0, -1};
 		
 		int max = a[0];
